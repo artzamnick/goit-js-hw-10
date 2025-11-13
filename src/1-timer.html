@@ -12,7 +12,33 @@
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Timer</h1>
-        <ul class="gallery"></ul>
+        <div class="controls">
+          <input
+            type="text"
+            id="datetime-picker"
+            placeholder="Select date and time"
+            readonly
+          />
+          <button type="button" data-start disabled>Start</button>
+        </div>
+        <div class="timer" aria-label="countdown-timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
       </div>
     </main>
     <script type="module" src="./js/1-timer.js"></script>
