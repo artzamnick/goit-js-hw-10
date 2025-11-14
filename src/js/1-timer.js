@@ -44,7 +44,6 @@ const options = {
 
 flatpickr(dateInput, options);
 setStartButtonState(false);
-
 startBtn.addEventListener('click', () => {
   if (!userSelectedDate) return;
 
